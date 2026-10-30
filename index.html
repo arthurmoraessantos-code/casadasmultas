@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#111827"
+    >
+
+    <meta
+        name="description"
+        content="Dashboard para controle de pequenos negócios"
+    >
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>CasadasMultas</title>
+
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div>
+            <span class="small-title">
+                CasadasMultas
+            </span>
+
+            <h1>Dashboard</h1>
+        </div>
+
+        <div class="avatar">
+            👤
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- RESUMO -->
+
+        <section class="cards">
+
+            <article class="card">
+
+                <span>🚫</span>
+
+                <p>Vendas</p>
+
+                <h2 id="multas acumuladas">
+                    R$ 2.450
+                </h2>
+
+            </article>
+
+
+            <article class="card">
+
+                <span>📉</span>
+
+                <p>Negociação</p>
+
+                <h2 id="pedidos">
+                    Ligue: 44 99214-7799
+                </h2>
+
+            </article>
+
+
+            <article class="card">
+
+                <span>👥</span>
+
+                <p>Usuários Solucionados:</p>
+
+                <h2 id="clientes">
+                    1,543
+                </h2>
+
+            </article>
+
+
+            <article class="card">
+
+                <span>📦</span>
+
+                <p>Ofertas</p>
+
+                <h2 id="produtos">
+                    3
+                </h2>
+
+            </article>
+
+        </section>
+
+
+        <!-- AÇÕES -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div>
+
+                    <span class="tag">
+                        ATALHOS
+                    </span>
+
+                    <h2>
+                        Ações rápidas
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="actions">
+
+                <button onclick="mostrarMensagem('Login')">
+                    ➕ Check-in
+                </button>
+
+                <button onclick="mostrarMensagem('WhatsApp')">
+                    ☎️ WhatsApp
+                </button>
+
+                <button onclick="mostrarMensagem('Meu Perfil')">
+                    👤 My Account
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- GRÁFICO -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div>
+
+                    <span class="tag">
+                        ANÁLISE
+                    </span>
+
+                    <h2>
+                        Multas Solucionadas
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="chart">
+
+                <div
+                    class="bar"
+                    style="height: 75%"
+                ></div>
+
+                <div
+                    class="bar"
+                    style="height: 85%"
+                ></div>
+
+                <div
+                    class="bar"
+                    style="height: 45%"
+                ></div>
+
+                <div
+                    class="bar"
+                    style="height: 70%"
+                ></div>
+
+                <div
+                    class="bar"
+                    style="height: 20%"
+                ></div>
+
+                <div
+                    class="bar"
+                    style="height: 98%"
+                ></div>
+
+            </div>
+
+            <div class="months">
+
+                <span>Jan</span>
+                <span>Fev</span>
+                <span>Mar</span>
+                <span>Abr</span>
+                <span>Mai</span>
+                <span>Jun</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ALERTA -->
+
+        <section class="alert">
+
+            <span>⚠️</span>
+
+            <div>
+
+                <strong>
+                    Reclamaçẽs do App
+                </strong>
+
+                <p>
+                    Ligue 
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <nav class="bottom-nav">
+
+        <button onclick="irPara('dashboard')">
+            🏠
+            <span>Início</span>
+        </button>
+
+        <button onclick="irPara('produtos')">
+            📦
+            <span>Soluções</span>
+        </button>
+
+        <button onclick="irPara('vendas')">
+            💰
+            <span>Multas</span>
+        </button>
+
+        <button onclick="irPara('perfil')">
+            👤
+            <span>Perfil</span>
+        </button>
+
+    </nav>
+
+
+    <div
+        id="toast"
+        class="toast"
+    ></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
